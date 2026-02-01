@@ -130,6 +130,7 @@
     font-size: 0.999rem;
     font-weight: $font-medium;
     color: $dark-blue;
+    text-decoration: underline;
 
     &:hover {
       color: $teal;
@@ -237,7 +238,7 @@
     gap: $spacing-md;
 
     &__signin {
-      display: none;
+      font-size: $text-xs;
     }
 
     &__signup {

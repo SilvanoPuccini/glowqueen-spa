@@ -266,6 +266,7 @@ button {
   font-size: 0.999rem;
   font-weight: 500;
   color: #264065;
+  text-decoration: underline;
 }
 .header-auth__signin:hover {
   color: #5B9A9A;
@@ -356,7 +357,7 @@ button {
     gap: 1rem;
   }
   .header-auth__signin {
-    display: none;
+    font-size: 0.75rem;
   }
   .header-auth__signup {
     padding: 0.5rem 1rem;
