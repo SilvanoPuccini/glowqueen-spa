@@ -1,0 +1,54 @@
+// ============================================
+// VARIABLES - GlowQueen Spa & Beauty
+// Design System
+// ============================================
+
+// -------------------- COLORS --------------------
+$cyan: #A9D6CB;
+$dark-blue: #264065;
+$cream: #FAF8F5;
+$gray-text: #909090;
+$white: #FFFFFF;
+$teal: #5B9A9A;
+
+// -------------------- TYPOGRAPHY --------------------
+$font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Font Weights
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+// Font Sizes (from Figma)
+$text-xs: 0.75rem;      // 12px
+$text-sm: 0.875rem;     // 14px
+$text-base: 1rem;       // 16px
+$text-lg: 1.125rem;     // 18px
+$text-xl: 1.25rem;      // 20px
+$text-2xl: 1.5rem;      // 24px - Subtitle
+$text-3xl: 2.25rem;     // 36px - Stats, Logo
+$text-4xl: 4rem;        // 64px - Title
+
+// -------------------- SPACING --------------------
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+$spacing-3xl: 5rem;
+
+// -------------------- LAYOUT --------------------
+$container-max: 1400px;
+$container-padding: $spacing-3xl;
+
+// -------------------- EFFECTS --------------------
+$transition: 200ms ease;
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+$shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
+$radius-sm: 8px;
+$radius-md: 16px;
+$radius-lg: 24px;
+$radius-full: 9999px;

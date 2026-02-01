@@ -1,0 +1,276 @@
+// ============================================
+// HEADER COMPONENT
+// ============================================
+@use "variables" as *;
+
+.header {
+  position: relative;
+  z-index: 100;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: $spacing-lg $container-padding;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// -------------------- LOGO --------------------
+.logo {
+  font-size: $text-3xl;
+  font-weight: $font-semibold;
+  letter-spacing: 0px;
+
+  &__glow {
+    color: $dark-blue;
+  }
+
+  &__queen {
+    color: $cyan;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+// -------------------- NAVIGATION --------------------
+.nav {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xl;
+
+  &__link {
+    font-size: 0.999rem;
+    font-weight: $font-medium;
+    color: $gray-text;
+    padding: $spacing-sm 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $cyan;
+      transition: width $transition;
+    }
+
+    &:hover {
+      color: $dark-blue;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &--active {
+      color: $dark-blue;
+      font-weight: $font-semibold;
+    }
+  }
+
+  &__dropdown {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      transition: transform $transition;
+    }
+
+    &:hover svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+// -------------------- ACTIONS --------------------
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xl;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark-blue;
+    border-radius: $radius-full;
+    transition: all $transition;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      background-color: rgba($cyan, 0.2);
+    }
+  }
+}
+
+.header-auth {
+  display: flex;
+  align-items: center;
+  gap: $spacing-lg;
+
+  &__signin {
+    font-size: 0.999rem;
+    font-weight: $font-medium;
+    color: $dark-blue;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+
+  &__signup {
+    font-size: $text-sm;
+    font-weight: $font-medium;
+    color: $white;
+    background-color: $dark-blue;
+    padding: $spacing-sm $spacing-lg;
+    border-radius: $radius-full;
+    transition: all $transition;
+
+    &:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+// -------------------- MOBILE MENU TOGGLE --------------------
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $dark-blue;
+    border-radius: 2px;
+    transition: all $transition;
+  }
+}
+
+// -------------------- RESPONSIVE --------------------
+@media (max-width: 1024px) {
+  .header {
+    padding: $spacing-md $spacing-xl;
+  }
+
+  .nav {
+    gap: $spacing-lg;
+  }
+
+  .header-actions {
+    gap: $spacing-lg;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: $spacing-md $spacing-lg;
+  }
+
+  .logo {
+    font-size: $text-2xl;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: $white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+
+    &.active {
+      height: auto;
+      padding: $spacing-xl 0;
+    }
+
+    &__link {
+      padding: $spacing-md $spacing-xl;
+      width: 100%;
+      text-align: center;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .header-auth {
+    gap: $spacing-md;
+
+    &__signin {
+      display: none;
+    }
+
+    &__signup {
+      padding: $spacing-sm $spacing-md;
+      font-size: $text-xs;
+    }
+  }
+
+  .header-icons {
+    gap: $spacing-sm;
+
+    &__btn {
+      width: 36px;
+      height: 36px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: $spacing-sm $spacing-md;
+  }
+
+  .logo {
+    font-size: $text-xl;
+  }
+
+  .header-icons {
+    display: none;
+  }
+}

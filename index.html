@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GlowQueen - Bring back the beauty and glow of your skin with our premium spa treatments"
+    />
+
+    <title>GlowQueen | Spa & Beauty</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ==================== BACKGROUND ==================== -->
+    <div class="background">
+      <div class="background__colors">
+        <div class="background__cream"></div>
+        <div class="background__cyan">
+          <!-- Lotus Flower Decoration -->
+          <div class="background__lotus">
+            <svg
+              viewBox="0 0 473 437"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M328.624 210.026C330.006 174.31 324.006 138.692 310.998 105.399C297.99 72.1071 278.254 41.8561 253.024 16.5375L236.25 0L219.476 16.5375C195.231 40.5916 176.018 69.2322 162.957 100.789C149.896 132.346 143.249 166.187 143.404 200.34C143.404 203.647 143.404 206.955 143.404 210.026C107.204 188.342 65.8221 176.833 23.625 176.715H0V200.34C-0.000736 258.908 21.7532 315.388 61.0413 358.823C100.329 402.258 154.351 429.552 212.625 435.409V436.59H259.875V435.409C318.149 429.552 372.171 402.258 411.459 358.823C450.747 315.388 472.501 258.908 472.5 200.34V176.715H448.875C406.517 176.748 364.961 188.26 328.624 210.026ZM236.25 68.7487C256.529 94.5554 270.558 124.706 277.239 156.84C283.919 188.974 283.071 222.218 274.759 253.969C259.235 270.896 246.262 289.997 236.25 310.669C226.238 289.997 213.265 270.896 197.741 253.969C193.123 236.464 190.741 218.444 190.654 200.34C190.482 152.573 206.561 106.169 236.25 68.7487ZM48.9038 225.619C89.9413 231.148 128.027 250.002 157.307 279.283C186.587 308.563 205.441 346.649 210.971 387.686C169.934 382.156 131.848 363.302 102.568 334.022C73.2875 304.742 54.4336 266.656 48.9038 225.619ZM261.529 387.686C267.059 346.649 285.913 308.563 315.193 279.283C344.473 250.002 382.559 231.148 423.596 225.619C418.066 266.656 399.212 304.742 369.932 334.022C340.652 363.302 302.566 382.156 261.529 387.686Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="background__white"></div>
+    </div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+      <a href="#" class="logo">
+        <span class="logo__glow">Glow</span
+        ><span class="logo__queen">Queen</span>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="#" class="nav__link nav__link--active">Home</a>
+        <a href="#" class="nav__link">About</a>
+        <a href="#" class="nav__link">Services</a>
+        <a href="#" class="nav__link">Facilities</a>
+        <a href="#" class="nav__link nav__dropdown">
+          More
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-icons">
+          <!-- Search Icon -->
+          <button class="header-icons__btn" aria-label="Search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+          </button>
+          <!-- Cart Icon (Custom SVG) -->
+          <button class="header-icons__btn" aria-label="Cart">
+            <svg viewBox="0 0 22 27" fill="currentColor">
+              <path
+                d="M20 6.66667H16V5.33333C16 3.91885 15.4381 2.56229 14.4379 1.5621C13.4377 0.561903 12.0812 0 10.6667 0C9.25218 0 7.89562 0.561903 6.89543 1.5621C5.89524 2.56229 5.33333 3.91885 5.33333 5.33333V6.66667H1.33333C0.979711 6.66667 0.640573 6.80714 0.390525 7.05719C0.140476 7.30724 0 7.64638 0 8L0 22.6667C0 23.7275 0.421427 24.7449 1.17157 25.4951C1.92172 26.2452 2.93913 26.6667 4 26.6667H17.3333C18.3942 26.6667 19.4116 26.2452 20.1618 25.4951C20.9119 24.7449 21.3333 23.7275 21.3333 22.6667V8C21.3333 7.64638 21.1929 7.30724 20.9428 7.05719C20.6928 6.80714 20.3536 6.66667 20 6.66667ZM8 5.33333C8 4.62609 8.28095 3.94781 8.78105 3.44771C9.28115 2.94762 9.95942 2.66667 10.6667 2.66667C11.3739 2.66667 12.0522 2.94762 12.5523 3.44771C13.0524 3.94781 13.3333 4.62609 13.3333 5.33333V6.66667L8 6.66667V5.33333ZM18.6667 22.6667C18.6667 23.0203 18.5262 23.3594 18.2761 23.6095C18.0261 23.8595 17.687 24 17.3333 24H4C3.64638 24 3.30724 23.8595 3.05719 23.6095C2.80714 23.3594 2.66667 23.0203 2.66667 22.6667L2.66667 9.33333H5.33333V10.6667C5.33333 11.0203 5.47381 11.3594 5.72386 11.6095C5.97391 11.8595 6.31305 12 6.66667 12C7.02029 12 7.35943 11.8595 7.60948 11.6095C7.85952 11.3594 8 11.0203 8 10.6667V9.33333H13.3333V10.6667C13.3333 11.0203 13.4738 11.3594 13.7239 11.6095C13.9739 11.8595 14.313 12 14.6667 12C15.0203 12 15.3594 11.8595 15.6095 11.6095C15.8595 11.3594 16 11.0203 16 10.6667V9.33333L18.6667 9.33333V22.6667Z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="header-auth">
+          <a href="#" class="header-auth__signin">Sign In</a>
+          <a href="#" class="header-auth__signup">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <main class="hero">
+      <!-- Content -->
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Bring back the beauty<br />and glow of your skin
+        </h1>
+
+        <p class="hero-subtitle">
+          We provide you various treatments from head to toe using the best
+          product, advanced technology, and affordable price
+        </p>
+
+        <div class="hero-cta">
+          <a href="#" class="btn btn--primary">Book Now</a>
+          <button class="btn btn--secondary">
+            <span class="btn-play">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </span>
+            <span class="btn-text">Watch Video</span>
+          </button>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-container">
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__icon">
+                <img src="assets/icons/treatment.svg" alt="" />
+              </div>
+              <span class="stat__number">15+</span>
+              <span class="stat__label">Special<br />Treatment</span>
+            </div>
+
+            <div class="stat">
+              <div class="stat__icon">
+                <img src="assets/icons/therapist.svg" alt="" />
+              </div>
+              <span class="stat__number">25+</span>
+              <span class="stat__label">Professional<br />Therapist</span>
+            </div>
+
+            <div class="stat">
+              <div class="stat__icon">
+                <img src="assets/icons/herbal.svg" alt="" />
+              </div>
+              <span class="stat__number">100%</span>
+              <span class="stat__label">Herbal<br />Cream Formula</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Visual -->
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img
+            src="assets/images/model.png"
+            alt="Woman with glowing skin"
+            class="hero-image"
+          />
+
+          <!-- Testimonial SVG -->
+          <div class="hero-testimonial hero-testimonial--bottom">
+            <div class="hero-testimonial__content">
+              <img src="assets/icons/testimony.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script>
+      // Mobile Menu Toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll(".nav__link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
